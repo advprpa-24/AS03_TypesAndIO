@@ -1,11 +1,10 @@
 module Main where
 
-import System.Environment
+import Data.ByteString.Lazy.Char8 qualified as L8
 import Network.HTTP.Client
 import Network.HTTP.Client.TLS
-import qualified Data.ByteString.Lazy.Char8 as L8
+import System.Environment
 
 main :: IO ()
 main = do
-    putStrLn "Load the current weather from https://wttr.in"
-    
+  putStrLn "Load the current weather from https://wttr.in"
